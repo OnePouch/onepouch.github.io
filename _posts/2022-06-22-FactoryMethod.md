@@ -1,7 +1,7 @@
 ---
 title: FactoryMethod
 date: 2022-06-22 00:00:00 +0800
-categories: [Design Pattern]
+categories: [Design Pattern, FactoryMethod]
 tags: [Tang]     # TAG names should always be lowercase
 ---
 
