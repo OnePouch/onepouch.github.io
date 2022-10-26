@@ -1,5 +1,5 @@
 ---
-title: codeWars
+title: codeWars Day2
 date: 2022-10-21 00:00:00 +0800
 categories: [codeWars]
 tags: [Tang]     # TAG names should always be lowercase

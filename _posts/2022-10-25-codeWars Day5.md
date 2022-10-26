@@ -1,5 +1,5 @@
 ---
-title: codeWars
+title: codeWars Day5
 date: 2022-10-25 00:00:00 +0800
 categories: [codeWars]
 tags: [Tang]     # TAG names should always be lowercase
@@ -76,3 +76,31 @@ func Stati(strg string) string {
 
     遍歷陣列,找出頻率最高的數字寫入另一個陣列arr,排序arr,返回arr的最後一個數字
 
+
+<details> <summary>code</summary>
+<pre><code>
+package kata
+
+import "sort"
+
+func HighestRank(nums []int) int {
+  var arr1 []int
+  
+  arr := map[int]int{}
+  maxCount := 0
+  for _, value := range nums {
+    arr[value]++
+    
+    if arr[value] > maxCount {
+      maxCount = arr[value]
+      arr1 = []int{value}
+    } else if arr[value] == maxCount {
+      arr1 = append(arr1, value)
+    }
+  }
+  
+  sort.Ints(arr1)
+  return arr1[len(arr1) - 1]
+}
+</code></pre>
+</details>
