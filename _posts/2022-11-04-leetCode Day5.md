@@ -24,7 +24,6 @@ func floodFill(image [][]int, sr int, sc int, color int) [][]int {
     if image[sr][sc] == color {
         return image
     }
-    var offset = [][]int{{0, 1}, {0, -1}, {1, 0}, {-1, 0}}
 
     oldColor := image[sr][sc]
     m := len(image)
