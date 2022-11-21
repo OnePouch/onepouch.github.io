@@ -21,7 +21,6 @@ tags: [Tang]     # TAG names should always be lowercase
 <details> <summary>code</summary>
 <pre><code>
 func updateMatrix(mat [][]int) [][]int {
-    dis := [][]int{{1, 0}, {0, 1}, {-1, 0}, {0, -1}}
     var result [][]int
     var q [][]int
     x, y := len(mat), len(mat[0])
