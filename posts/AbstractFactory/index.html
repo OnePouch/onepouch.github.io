@@ -1,0 +1,4411 @@
+<!DOCTYPE html><html lang="en" mode="light" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="day-prompt" content="days ago"><meta name="hour-prompt" content="hours ago"><meta name="minute-prompt" content="minutes ago"><meta name="justnow-prompt" content="just now"><meta name="generator" content="Jekyll v4.2.1" /><meta property="og:title" content="AbstractFactory" /><meta property="og:locale" content="en" /><meta name="description" content="AbstractFactory" /><meta property="og:description" content="AbstractFactory" /><link rel="canonical" href="https://onepouch.github.io/posts/AbstractFactory/" /><meta property="og:url" content="https://onepouch.github.io/posts/AbstractFactory/" /><meta property="og:site_name" content="OnePouch" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2022-06-22T00:00:00+08:00" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="AbstractFactory" /><meta name="twitter:site" content="@OnePouch" /><meta name="google-site-verification" content="google_meta_tag_verification" /> <script type="application/ld+json"> {"description":"AbstractFactory","headline":"AbstractFactory","dateModified":"2022-06-22T16:48:33+08:00","url":"https://onepouch.github.io/posts/AbstractFactory/","datePublished":"2022-06-22T00:00:00+08:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://onepouch.github.io/posts/AbstractFactory/"},"@context":"https://schema.org"}</script><title>AbstractFactory | OnePouch</title><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicons/site.webmanifest"><link rel="shortcut icon" href="/assets/img/favicons/favicon.ico"><meta name="apple-mobile-web-app-title" content="OnePouch"><meta name="application-name" content="OnePouch"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://fonts.gstatic.com"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials"><link rel="dns-prefetch" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="preconnect" href="https://cdn.jsdelivr.net"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"><link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script><body data-spy="scroll" data-target="#toc"><div id="sidebar" class="d-flex flex-column align-items-end" lang="en"><div class="profile-wrapper text-center"><div id="avatar"> <a href="/" alt="avatar" class="mx-auto"> <img src="https://i2.wp.com/one-pouch.com/wp-content/uploads/2019/05/cropped-蝴蝶結logo4t_工作區域-test-1.png?fit=32%2C32&ssl=1" alt="avatar" onerror="this.style.display='none'"> </a></div><div class="site-title mt-3"> <a href="/">OnePouch</a></div><div class="site-subtitle font-italic">OnePouch 戴上一個幸運的期盼</div></div><ul class="w-100"><li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>HOME</span> </a><li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORIES</span> </a><li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i> <span>TAGS</span> </a><li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVES</span> </a><li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i> <span>ABOUT</span> </a></ul><div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"> <a href="https://github.com/OnePouch" aria-label="github" target="_blank" rel="noopener"> <i class="fab fa-github"></i> </a> <a href="https://twitter.com/OnePouch" aria-label="twitter" target="_blank" rel="noopener"> <i class="fab fa-twitter"></i> </a> <a href=" javascript:location.href = 'mailto:' + ['lamon0624','gmail.com'].join('@')" aria-label="email" > <i class="fas fa-envelope"></i> </a> <a href="/feed.xml" aria-label="rss" > <i class="fas fa-rss"></i> </a></div></div><div id="topbar-wrapper" class="row justify-content-center topbar-down"><div id="topbar" class="col-11 d-flex h-100 align-items-center justify-content-between"> <span id="breadcrumb"> <span> <a href="/"> Home </a> </span> <span>AbstractFactory</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Post</div><i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Search..."> <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i> </span> <span id="search-cancel" >Cancel</span></div></div><div id="main-wrapper"><div id="main"><div class="row"><div id="post-wrapper" class="col-12 col-lg-11 col-xl-8"><div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><h1 data-toc-skip>AbstractFactory</h1><div class="post-meta text-muted d-flex flex-column"><div> <span class="semi-bold"> OnePouch </span> on <span class="timeago " data-toggle="tooltip" data-placement="bottom" title="Wed, Jun 22, 2022, 12:00 AM +0800" >Jun 22, 2022<i class="unloaded">2022-06-22T00:00:00+08:00</i> </span></div><div> <span> Updated <span class="timeago lastmod" data-toggle="tooltip" data-placement="bottom" title="Wed, Jun 22, 2022, 4:48 PM +0800" >Jun 22, 2022<i class="unloaded">2022-06-22T16:48:33+08:00</i> </span> </span> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="4752 words">26 min read</span></div></div><div class="post-content"><h1 id="abstractfactory">AbstractFactory</h1><p>抽象工廠模式( Abstract Factory)，提供一個建立一系列相關或互相依賴物件的介面，而無需指定它們具體的類別。</p><h3 id="uml">UML</h3><p><img data-proofer-ignore data-src="https://refactoring.guru/images/patterns/diagrams/abstract-factory/structure-2x.png" alt="avatar" /></p><h3 id="example-code">Example Code</h3><div class="language-php highlighter-rouge"><div class="code-header"> <span text-data=" PHP "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+407
+408
+409
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462
+463
+464
+465
+466
+467
+468
+469
+470
+471
+472
+473
+474
+475
+476
+477
+478
+479
+480
+481
+482
+483
+484
+485
+486
+487
+488
+489
+490
+491
+492
+493
+494
+495
+496
+497
+498
+499
+500
+501
+502
+503
+504
+505
+506
+507
+508
+509
+510
+511
+512
+513
+514
+515
+516
+517
+518
+519
+520
+521
+522
+523
+524
+525
+526
+527
+528
+529
+530
+531
+532
+533
+534
+535
+536
+537
+538
+539
+540
+541
+542
+543
+544
+545
+546
+547
+548
+549
+550
+551
+552
+553
+554
+555
+556
+557
+558
+559
+560
+561
+562
+563
+564
+565
+566
+567
+568
+569
+570
+571
+572
+573
+574
+575
+576
+577
+578
+579
+580
+581
+582
+583
+584
+585
+586
+587
+588
+589
+590
+591
+592
+593
+594
+595
+596
+597
+598
+599
+600
+601
+602
+603
+604
+605
+606
+607
+608
+609
+610
+611
+612
+613
+614
+615
+616
+617
+618
+619
+620
+621
+622
+623
+624
+625
+626
+627
+628
+629
+630
+631
+632
+633
+634
+635
+636
+637
+638
+639
+640
+641
+642
+643
+644
+645
+646
+647
+648
+649
+650
+651
+652
+653
+654
+655
+656
+657
+658
+659
+660
+661
+662
+663
+664
+665
+666
+667
+668
+669
+670
+671
+672
+673
+674
+675
+676
+677
+678
+679
+680
+681
+682
+683
+684
+685
+686
+687
+688
+689
+690
+691
+692
+693
+694
+695
+696
+697
+698
+699
+700
+701
+702
+703
+704
+705
+706
+707
+708
+709
+710
+711
+712
+713
+714
+715
+716
+717
+718
+719
+720
+721
+722
+723
+724
+725
+726
+727
+728
+729
+730
+731
+732
+733
+734
+735
+736
+737
+738
+739
+740
+741
+742
+743
+744
+745
+746
+747
+748
+749
+750
+751
+752
+753
+754
+755
+756
+757
+758
+759
+760
+761
+762
+763
+764
+765
+766
+767
+768
+769
+770
+771
+772
+773
+774
+775
+776
+777
+778
+779
+780
+781
+782
+783
+784
+785
+786
+787
+788
+789
+790
+791
+792
+793
+794
+795
+796
+797
+798
+799
+800
+801
+802
+803
+804
+805
+806
+807
+808
+809
+810
+811
+812
+813
+814
+815
+816
+817
+818
+819
+820
+821
+822
+823
+824
+825
+826
+827
+828
+829
+830
+831
+832
+833
+834
+835
+836
+837
+838
+839
+840
+841
+842
+843
+844
+845
+846
+847
+848
+849
+850
+851
+852
+853
+854
+855
+856
+857
+858
+859
+860
+861
+862
+863
+864
+865
+866
+867
+868
+869
+870
+871
+872
+873
+874
+875
+876
+877
+878
+879
+880
+881
+882
+883
+884
+885
+886
+887
+888
+889
+890
+891
+892
+893
+894
+895
+896
+897
+898
+899
+900
+901
+902
+903
+904
+905
+906
+907
+908
+909
+910
+911
+912
+913
+914
+915
+916
+917
+918
+919
+920
+921
+922
+923
+924
+925
+926
+927
+928
+929
+930
+931
+932
+933
+934
+935
+936
+937
+938
+939
+940
+941
+942
+943
+944
+945
+946
+947
+948
+949
+950
+951
+952
+953
+954
+955
+956
+957
+958
+959
+960
+961
+962
+963
+964
+965
+966
+967
+968
+969
+970
+971
+972
+973
+974
+975
+976
+977
+978
+979
+980
+981
+982
+983
+984
+985
+986
+987
+988
+989
+990
+991
+992
+993
+994
+995
+996
+997
+998
+999
+1000
+1001
+1002
+1003
+1004
+1005
+1006
+1007
+1008
+1009
+1010
+1011
+1012
+1013
+1014
+1015
+1016
+1017
+1018
+1019
+1020
+1021
+1022
+1023
+1024
+1025
+1026
+1027
+1028
+1029
+1030
+1031
+1032
+1033
+1034
+1035
+1036
+1037
+1038
+1039
+1040
+1041
+1042
+1043
+1044
+1045
+1046
+1047
+1048
+1049
+1050
+1051
+1052
+1053
+1054
+1055
+1056
+1057
+1058
+1059
+1060
+1061
+1062
+1063
+1064
+1065
+1066
+1067
+1068
+1069
+1070
+1071
+1072
+1073
+1074
+1075
+1076
+1077
+1078
+1079
+1080
+1081
+1082
+1083
+1084
+1085
+1086
+1087
+1088
+1089
+1090
+1091
+1092
+1093
+1094
+1095
+1096
+1097
+1098
+1099
+1100
+1101
+1102
+1103
+1104
+1105
+1106
+1107
+1108
+1109
+1110
+1111
+1112
+1113
+1114
+1115
+1116
+1117
+1118
+1119
+1120
+1121
+1122
+1123
+1124
+1125
+1126
+1127
+1128
+1129
+1130
+1131
+1132
+1133
+1134
+1135
+1136
+1137
+1138
+1139
+1140
+1141
+1142
+1143
+1144
+1145
+1146
+1147
+1148
+1149
+1150
+1151
+1152
+1153
+1154
+1155
+1156
+1157
+1158
+1159
+1160
+1161
+1162
+1163
+1164
+1165
+1166
+1167
+1168
+1169
+1170
+1171
+1172
+1173
+1174
+1175
+1176
+1177
+1178
+1179
+1180
+1181
+1182
+1183
+1184
+1185
+1186
+1187
+1188
+1189
+1190
+1191
+1192
+1193
+1194
+1195
+1196
+1197
+1198
+1199
+1200
+1201
+1202
+1203
+1204
+1205
+1206
+1207
+1208
+1209
+1210
+1211
+1212
+1213
+1214
+1215
+1216
+1217
+1218
+1219
+1220
+1221
+1222
+1223
+1224
+1225
+1226
+1227
+1228
+1229
+1230
+1231
+1232
+1233
+1234
+1235
+1236
+1237
+1238
+1239
+1240
+1241
+1242
+1243
+1244
+1245
+1246
+1247
+1248
+1249
+1250
+1251
+1252
+1253
+1254
+1255
+1256
+1257
+1258
+1259
+1260
+1261
+1262
+1263
+1264
+1265
+1266
+1267
+1268
+1269
+1270
+1271
+1272
+1273
+1274
+1275
+1276
+1277
+1278
+1279
+1280
+1281
+1282
+1283
+1284
+1285
+1286
+1287
+1288
+1289
+1290
+1291
+1292
+1293
+1294
+1295
+1296
+1297
+1298
+1299
+1300
+1301
+1302
+1303
+1304
+1305
+1306
+1307
+1308
+1309
+1310
+1311
+1312
+1313
+1314
+1315
+1316
+1317
+1318
+1319
+1320
+1321
+1322
+1323
+1324
+1325
+1326
+1327
+1328
+1329
+1330
+1331
+1332
+1333
+1334
+1335
+1336
+1337
+1338
+1339
+1340
+1341
+1342
+1343
+1344
+1345
+1346
+1347
+1348
+1349
+1350
+1351
+1352
+1353
+1354
+1355
+1356
+1357
+1358
+1359
+1360
+1361
+1362
+1363
+1364
+1365
+1366
+1367
+1368
+1369
+1370
+1371
+1372
+1373
+1374
+1375
+1376
+1377
+1378
+1379
+1380
+1381
+1382
+1383
+1384
+1385
+1386
+1387
+1388
+1389
+1390
+1391
+1392
+1393
+1394
+1395
+1396
+1397
+1398
+1399
+1400
+1401
+1402
+1403
+1404
+1405
+1406
+1407
+1408
+1409
+1410
+1411
+1412
+1413
+1414
+1415
+1416
+1417
+1418
+1419
+1420
+1421
+1422
+1423
+1424
+1425
+1426
+1427
+1428
+1429
+1430
+1431
+1432
+1433
+1434
+1435
+1436
+1437
+1438
+1439
+1440
+1441
+1442
+1443
+1444
+1445
+1446
+1447
+1448
+1449
+1450
+1451
+1452
+1453
+1454
+1455
+1456
+1457
+1458
+1459
+1460
+1461
+1462
+1463
+1464
+1465
+1466
+1467
+1468
+1469
+1470
+1471
+1472
+1473
+1474
+1475
+1476
+1477
+1478
+1479
+1480
+1481
+1482
+1483
+1484
+1485
+1486
+1487
+1488
+1489
+1490
+1491
+1492
+1493
+1494
+1495
+1496
+1497
+1498
+1499
+1500
+1501
+1502
+1503
+1504
+1505
+1506
+1507
+1508
+1509
+1510
+1511
+1512
+1513
+1514
+1515
+1516
+1517
+1518
+1519
+1520
+1521
+1522
+1523
+1524
+1525
+1526
+1527
+1528
+1529
+1530
+1531
+1532
+1533
+1534
+1535
+1536
+1537
+1538
+1539
+1540
+1541
+1542
+1543
+1544
+1545
+1546
+1547
+1548
+1549
+1550
+1551
+1552
+1553
+1554
+1555
+1556
+1557
+1558
+1559
+1560
+1561
+1562
+1563
+1564
+1565
+1566
+1567
+1568
+1569
+1570
+1571
+1572
+1573
+1574
+1575
+1576
+1577
+1578
+1579
+1580
+1581
+1582
+1583
+1584
+1585
+1586
+1587
+1588
+1589
+1590
+1591
+1592
+1593
+1594
+1595
+1596
+1597
+1598
+1599
+1600
+1601
+1602
+1603
+1604
+1605
+1606
+1607
+1608
+1609
+1610
+1611
+1612
+1613
+1614
+1615
+1616
+1617
+1618
+1619
+1620
+1621
+1622
+1623
+1624
+1625
+1626
+1627
+1628
+1629
+1630
+1631
+1632
+1633
+1634
+1635
+1636
+1637
+1638
+1639
+1640
+1641
+1642
+1643
+1644
+1645
+1646
+1647
+1648
+1649
+1650
+1651
+1652
+1653
+1654
+1655
+1656
+1657
+1658
+1659
+1660
+1661
+1662
+1663
+1664
+1665
+1666
+1667
+1668
+1669
+1670
+1671
+1672
+1673
+1674
+1675
+1676
+1677
+1678
+1679
+1680
+1681
+1682
+1683
+1684
+1685
+1686
+1687
+1688
+1689
+1690
+1691
+1692
+1693
+1694
+1695
+1696
+1697
+1698
+1699
+1700
+1701
+1702
+1703
+1704
+1705
+1706
+1707
+1708
+1709
+1710
+1711
+1712
+1713
+1714
+1715
+1716
+1717
+1718
+1719
+1720
+1721
+1722
+1723
+1724
+1725
+1726
+1727
+1728
+1729
+1730
+1731
+1732
+1733
+1734
+1735
+1736
+1737
+1738
+1739
+1740
+1741
+1742
+1743
+1744
+1745
+1746
+1747
+1748
+1749
+1750
+1751
+1752
+1753
+1754
+1755
+1756
+1757
+1758
+1759
+1760
+1761
+1762
+1763
+1764
+1765
+1766
+1767
+1768
+1769
+1770
+1771
+1772
+1773
+1774
+1775
+1776
+1777
+1778
+1779
+1780
+1781
+1782
+1783
+1784
+1785
+1786
+1787
+1788
+1789
+1790
+1791
+1792
+1793
+1794
+1795
+1796
+1797
+1798
+1799
+1800
+1801
+1802
+1803
+1804
+1805
+1806
+1807
+1808
+1809
+1810
+1811
+1812
+1813
+1814
+1815
+1816
+1817
+1818
+1819
+1820
+1821
+1822
+1823
+1824
+1825
+1826
+1827
+1828
+1829
+1830
+1831
+1832
+1833
+1834
+1835
+1836
+1837
+1838
+1839
+1840
+1841
+1842
+1843
+1844
+1845
+1846
+1847
+1848
+1849
+1850
+1851
+1852
+1853
+1854
+1855
+1856
+1857
+1858
+1859
+1860
+1861
+1862
+1863
+1864
+1865
+1866
+1867
+1868
+1869
+1870
+1871
+1872
+1873
+1874
+1875
+1876
+1877
+1878
+1879
+1880
+1881
+1882
+1883
+1884
+1885
+1886
+1887
+1888
+1889
+1890
+1891
+1892
+1893
+1894
+1895
+1896
+1897
+1898
+1899
+1900
+1901
+1902
+1903
+1904
+1905
+1906
+1907
+1908
+1909
+1910
+1911
+1912
+1913
+1914
+1915
+1916
+1917
+1918
+1919
+1920
+1921
+1922
+1923
+1924
+1925
+1926
+1927
+1928
+1929
+1930
+1931
+1932
+1933
+1934
+1935
+1936
+1937
+1938
+1939
+1940
+1941
+1942
+1943
+1944
+1945
+1946
+1947
+1948
+1949
+1950
+1951
+1952
+1953
+1954
+1955
+1956
+1957
+1958
+1959
+1960
+1961
+1962
+1963
+1964
+1965
+1966
+1967
+1968
+1969
+1970
+1971
+1972
+1973
+1974
+1975
+1976
+1977
+1978
+1979
+1980
+1981
+1982
+1983
+1984
+1985
+1986
+1987
+1988
+1989
+1990
+1991
+1992
+1993
+1994
+1995
+1996
+1997
+1998
+1999
+2000
+2001
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026
+2027
+2028
+2029
+2030
+2031
+2032
+2033
+2034
+2035
+2036
+2037
+2038
+2039
+2040
+2041
+2042
+2043
+2044
+2045
+2046
+2047
+2048
+2049
+2050
+2051
+2052
+2053
+2054
+2055
+2056
+2057
+2058
+2059
+2060
+2061
+2062
+2063
+2064
+2065
+2066
+2067
+2068
+2069
+2070
+2071
+2072
+2073
+2074
+2075
+2076
+2077
+2078
+2079
+2080
+2081
+2082
+2083
+2084
+2085
+2086
+2087
+2088
+2089
+2090
+2091
+2092
+2093
+2094
+2095
+2096
+2097
+2098
+2099
+2100
+2101
+2102
+2103
+2104
+2105
+2106
+2107
+2108
+2109
+2110
+2111
+2112
+2113
+2114
+2115
+2116
+2117
+2118
+2119
+2120
+2121
+2122
+2123
+2124
+2125
+2126
+2127
+2128
+2129
+2130
+2131
+2132
+2133
+2134
+2135
+2136
+2137
+2138
+2139
+2140
+2141
+2142
+2143
+2144
+2145
+2146
+2147
+2148
+2149
+2150
+2151
+2152
+2153
+2154
+2155
+2156
+2157
+2158
+2159
+2160
+2161
+2162
+2163
+2164
+2165
+2166
+2167
+2168
+2169
+2170
+2171
+2172
+2173
+2174
+2175
+2176
+2177
+2178
+2179
+2180
+2181
+2182
+2183
+2184
+2185
+2186
+2187
+2188
+2189
+2190
+2191
+2192
+2193
+2194
+2195
+2196
+2197
+2198
+2199
+2200
+2201
+2202
+2203
+2204
+2205
+</pre><td class="rouge-code"><pre><span class="kd">interface</span> <span class="nc">TemplateFactory</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">createTitleTemplate</span><span class="p">():</span> <span class="kt">TitleTemplate</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">createPageTemplate</span><span class="p">():</span> <span class="kt">PageTemplate</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">getRenderer</span><span class="p">():</span> <span class="kt">TemplateRenderer</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">TwigTemplateFactory</span> <span class="kd">implements</span> <span class="nc">TemplateFactory</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">createTitleTemplate</span><span class="p">():</span> <span class="kt">TitleTemplate</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nc">TwigTitleTemplate</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">createPageTemplate</span><span class="p">():</span> <span class="kt">PageTemplate</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nc">TwigPageTemplate</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">createTitleTemplate</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">getRenderer</span><span class="p">():</span> <span class="kt">TemplateRenderer</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nc">TwigRenderer</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">PHPTemplateFactory</span> <span class="kd">implements</span> <span class="nc">TemplateFactory</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">createTitleTemplate</span><span class="p">():</span> <span class="kt">TitleTemplate</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nc">PHPTemplateTitleTemplate</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">createPageTemplate</span><span class="p">():</span> <span class="kt">PageTemplate</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nc">PHPTemplatePageTemplate</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">createTitleTemplate</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">getRenderer</span><span class="p">():</span> <span class="kt">TemplateRenderer</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nc">PHPTemplateRenderer</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">interface</span> <span class="nc">TitleTemplate</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">getTemplateString</span><span class="p">():</span> <span class="kt">string</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">TwigTitleTemplate</span> <span class="kd">implements</span> <span class="nc">TitleTemplate</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">getTemplateString</span><span class="p">():</span> <span class="kt">string</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="s2">"&lt;h1&gt;&lt;/h1&gt;"</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">PHPTemplateTitleTemplate</span> <span class="kd">implements</span> <span class="nc">TitleTemplate</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">getTemplateString</span><span class="p">():</span> <span class="kt">string</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="s2">"&lt;h1&gt;&lt;?= </span><span class="se">\$</span><span class="s2">title; ?&gt;&lt;/h1&gt;"</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">interface</span> <span class="nc">PageTemplate</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">getTemplateString</span><span class="p">():</span> <span class="kt">string</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">abstract</span> <span class="kd">class</span> <span class="nc">BasePageTemplate</span> <span class="kd">implements</span> <span class="nc">PageTemplate</span>
+<span class="p">{</span>
+    <span class="k">protected</span> <span class="nv">$titleTemplate</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__construct</span><span class="p">(</span><span class="kt">TitleTemplate</span> <span class="nv">$titleTemplate</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">titleTemplate</span> <span class="o">=</span> <span class="nv">$titleTemplate</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">TwigPageTemplate</span> <span class="kd">extends</span> <span class="nc">BasePageTemplate</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">getTemplateString</span><span class="p">():</span> <span class="kt">string</span>
+    <span class="p">{</span>
+        <span class="nv">$renderedTitle</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">titleTemplate</span><span class="o">-&gt;</span><span class="nf">getTemplateString</span><span class="p">();</span>
+
+        <span class="k">return</span> <span class="sh">&lt;&lt;&lt;HTML
+        &lt;div class="page"&gt;
+            $renderedTitle
+            &lt;article class="content"&gt;&lt;!DOCTYPE html&gt;
+
+
+
+
+
+
+
+&lt;html lang="en" 
+  
+    mode="light"
+  
+&gt;
+
+  &lt;!--
+  The Head
+--&gt;
+
+&lt;head&gt;
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+
+  
+
+    &lt;!-- i18n for `_javascript/utils/timeago.js` --&gt;
+    &lt;meta name="day-prompt" content="days ago"&gt;
+    &lt;meta name="hour-prompt" content="hours ago"&gt;
+    &lt;meta name="minute-prompt" content="minutes ago"&gt;
+    &lt;meta name="justnow-prompt" content="just now"&gt;
+
+    
+
+    
+
+  
+
+  &lt;!-- Begin Jekyll SEO tag v2.7.1 --&gt;
+&lt;meta name="generator" content="Jekyll v4.2.1" /&gt;
+&lt;meta property="og:title" content="Docker ARG VS ENV" /&gt;
+&lt;meta property="og:locale" content="en" /&gt;
+&lt;meta name="description" content="ARG VS ENV" /&gt;
+&lt;meta property="og:description" content="ARG VS ENV" /&gt;
+&lt;link rel="canonical" href="https://onepouch.github.io/posts/Docker-ARG-ENV/" /&gt;
+&lt;meta property="og:url" content="https://onepouch.github.io/posts/Docker-ARG-ENV/" /&gt;
+&lt;meta property="og:site_name" content="OnePouch" /&gt;
+&lt;meta property="og:type" content="article" /&gt;
+&lt;meta property="article:published_time" content="2021-12-08T00:00:00+08:00" /&gt;
+&lt;meta name="twitter:card" content="summary" /&gt;
+&lt;meta property="twitter:title" content="Docker ARG VS ENV" /&gt;
+&lt;meta name="twitter:site" content="@OnePouch" /&gt;
+&lt;meta name="google-site-verification" content="google_meta_tag_verification" /&gt;
+&lt;script type="application/ld+json"&gt;
+{"description":"ARG VS ENV","headline":"Docker ARG VS ENV","dateModified":"2021-12-08T00:00:00+08:00","url":"https://onepouch.github.io/posts/Docker-ARG-ENV/","datePublished":"2021-12-08T00:00:00+08:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://onepouch.github.io/posts/Docker-ARG-ENV/"},"@context":"https://schema.org"}&lt;/script&gt;
+&lt;!-- End Jekyll SEO tag --&gt;
+
+
+  &lt;title&gt;Docker ARG VS ENV | OnePouch
+  &lt;/title&gt;
+
+  &lt;!--
+  The Favicons for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps
+  Generated by: https://realfavicongenerator.net/
+--&gt;
+
+
+
+&lt;link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"&gt;
+&lt;link rel="manifest" href="/assets/img/favicons/site.webmanifest"&gt;
+&lt;link rel="shortcut icon" href="/assets/img/favicons/favicon.ico"&gt;
+&lt;meta name="apple-mobile-web-app-title" content="OnePouch"&gt;
+&lt;meta name="application-name" content="OnePouch"&gt;
+&lt;meta name="msapplication-TileColor" content="#da532c"&gt;
+&lt;meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml"&gt;
+&lt;meta name="theme-color" content="#ffffff"&gt;
+
+
+  &lt;!-- Google Fonts --&gt;
+  &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"&gt;
+  &lt;link rel="dns-prefetch" href="https://fonts.gstatic.com"&gt;
+
+  &lt;!-- GA --&gt;
+  
+    &lt;link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials"&gt;
+    &lt;link rel="dns-prefetch" href="https://www.google-analytics.com"&gt;
+
+    &lt;link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous"&gt;
+    &lt;link rel="dns-prefetch" href="https://www.googletagmanager.com"&gt;
+
+    
+  
+
+  &lt;!-- jsDelivr CDN --&gt;
+  &lt;link rel="preconnect" href="https://cdn.jsdelivr.net"&gt;
+  &lt;link rel="dns-prefetch" href="https://cdn.jsdelivr.net"&gt;
+
+  &lt;!-- Bootstrap --&gt;
+  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"&gt;
+
+  &lt;!-- Font Awesome --&gt;
+  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"&gt;
+
+  &lt;!--
+  CSS selector for site.
+--&gt;
+
+&lt;link rel="stylesheet" href="/assets/css/style.css"&gt;
+
+
+  &lt;link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css"&gt;
+
+
+
+  &lt;!-- Manific Popup --&gt;
+  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css"&gt;
+
+
+
+  &lt;!-- JavaScript --&gt;
+
+  &lt;script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"&gt;&lt;/script&gt;
+
+&lt;/head&gt;
+
+
+  &lt;body data-spy="scroll" data-target="#toc"&gt;
+
+    &lt;!--
+  The Side Bar
+--&gt;
+
+&lt;div id="sidebar" class="d-flex flex-column align-items-end" lang="en"&gt;
+  &lt;div class="profile-wrapper text-center"&gt;
+    &lt;div id="avatar"&gt;
+      &lt;a href="/" alt="avatar" class="mx-auto"&gt;
+        
+          
+          &lt;img src="https://i2.wp.com/one-pouch.com/wp-content/uploads/2019/05/cropped-蝴蝶結logo4t_工作區域-test-1.png?fit=32%2C32&amp;ssl=1" alt="avatar" onerror="this.style.display='none'"&gt;
+        
+      &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class="site-title mt-3"&gt;
+      &lt;a href="/"&gt;OnePouch&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="site-subtitle font-italic"&gt;OnePouch 戴上一個幸運的期盼&lt;/div&gt;
+
+  &lt;/div&gt;&lt;!-- .profile-wrapper --&gt;
+
+  &lt;ul class="w-100"&gt;
+
+    &lt;!-- home --&gt;
+    &lt;li class="nav-item"&gt;
+      &lt;a href="/" class="nav-link"&gt;
+        &lt;i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"&gt;&lt;/i&gt;
+        &lt;span&gt;HOME&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;!-- the real tabs --&gt;
+    
+    &lt;li class="nav-item"&gt;
+      &lt;a href="/categories/" class="nav-link"&gt;
+        &lt;i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"&gt;&lt;/i&gt;
+        
+
+        &lt;span&gt;CATEGORIES&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt; &lt;!-- .nav-item --&gt;
+    
+    &lt;li class="nav-item"&gt;
+      &lt;a href="/tags/" class="nav-link"&gt;
+        &lt;i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"&gt;&lt;/i&gt;
+        
+
+        &lt;span&gt;TAGS&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt; &lt;!-- .nav-item --&gt;
+    
+    &lt;li class="nav-item"&gt;
+      &lt;a href="/archives/" class="nav-link"&gt;
+        &lt;i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"&gt;&lt;/i&gt;
+        
+
+        &lt;span&gt;ARCHIVES&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt; &lt;!-- .nav-item --&gt;
+    
+    &lt;li class="nav-item"&gt;
+      &lt;a href="/about/" class="nav-link"&gt;
+        &lt;i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"&gt;&lt;/i&gt;
+        
+
+        &lt;span&gt;ABOUT&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt; &lt;!-- .nav-item --&gt;
+    
+
+  &lt;/ul&gt; &lt;!-- ul.nav.flex-column --&gt;
+
+  &lt;div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"&gt;
+
+    
+      
+
+      
+      &lt;a href="https://github.com/OnePouch" aria-label="github"
+        
+        target="_blank" rel="noopener"&gt;
+        &lt;i class="fab fa-github"&gt;&lt;/i&gt;
+      &lt;/a&gt;
+      
+
+    
+      
+
+      
+      &lt;a href="https://twitter.com/OnePouch" aria-label="twitter"
+        
+        target="_blank" rel="noopener"&gt;
+        &lt;i class="fab fa-twitter"&gt;&lt;/i&gt;
+      &lt;/a&gt;
+      
+
+    
+      
+
+      
+      &lt;a href="
+          javascript:location.href = 'mailto:' + ['lamon0624','gmail.com'].join('@')" aria-label="email"
+        
+        &gt;
+        &lt;i class="fas fa-envelope"&gt;&lt;/i&gt;
+      &lt;/a&gt;
+      
+
+    
+      
+
+      
+      &lt;a href="/feed.xml" aria-label="rss"
+        
+        &gt;
+        &lt;i class="fas fa-rss"&gt;&lt;/i&gt;
+      &lt;/a&gt;
+      
+
+    
+
+    
+
+  &lt;/div&gt; &lt;!-- .sidebar-bottom --&gt;
+
+&lt;/div&gt;&lt;!-- #sidebar --&gt;
+
+
+    &lt;!--
+  The Top Bar
+--&gt;
+
+&lt;div id="topbar-wrapper" class="row justify-content-center topbar-down"&gt;
+  &lt;div id="topbar" class="col-11 d-flex h-100 align-items-center justify-content-between"&gt;
+    &lt;span id="breadcrumb"&gt;
+
+    
+
+    
+
+      
+
+        
+          &lt;span&gt;
+            &lt;a href="/"&gt;
+              Home
+            &lt;/a&gt;
+          &lt;/span&gt;
+
+        
+
+      
+
+        
+
+      
+
+        
+
+          
+            &lt;span&gt;Docker ARG VS ENV&lt;/span&gt;
+          
+
+        
+
+      
+
+    
+
+    &lt;/span&gt;&lt;!-- endof #breadcrumb --&gt;
+
+    &lt;i id="sidebar-trigger" class="fas fa-bars fa-fw"&gt;&lt;/i&gt;
+
+    &lt;div id="topbar-title"&gt;
+      Post
+    &lt;/div&gt;
+
+    &lt;i id="search-trigger" class="fas fa-search fa-fw"&gt;&lt;/i&gt;
+    &lt;span id="search-wrapper" class="align-items-center"&gt;
+      &lt;i class="fas fa-search fa-fw"&gt;&lt;/i&gt;
+      &lt;input class="form-control" id="search-input" type="search"
+        aria-label="search" autocomplete="off" placeholder="Search..."&gt;
+      &lt;i class="fa fa-times-circle fa-fw" id="search-cleaner"&gt;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span id="search-cancel" &gt;Cancel&lt;/span&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+
+    &lt;div id="main-wrapper"&gt;
+      &lt;div id="main"&gt;
+
+        &lt;!--
+  Refactor the HTML structure.
+--&gt;
+
+
+
+&lt;!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `&lt;div class="table-wrapper"&gt;` and `&lt;/div&gt;`
+--&gt;
+
+
+
+&lt;!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+--&gt;
+
+
+
+&lt;!-- Add attribute 'hide-bullet' to the checkbox list --&gt;
+
+
+
+
+&lt;!-- images --&gt;
+
+
+
+  &lt;!-- add CDN prefix if it exists --&gt;
+
+  
+
+  
+
+  &lt;!-- lazy-load images &lt;https://github.com/ApoorvSaxena/lozad.js#usage&gt; --&gt;
+
+  
+
+  &lt;!-- add image placehoder to prevent layout reflow --&gt;
+
+  
+
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+
+      
+
+    
+      
+      
+
+      
+
+      
+
+    
+      
+      
+
+      
+
+      
+
+    
+      
+      
+
+      
+
+      
+
+    
+
+    
+
+  
+
+  
+
+
+
+&lt;!-- Add header for code snippets --&gt;
+
+
+
+
+&lt;!-- return --&gt;
+
+
+
+
+
+&lt;div class="row"&gt;
+
+  &lt;div id="post-wrapper" class="col-12 col-lg-11 col-xl-8"&gt;
+
+    &lt;div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"&gt;
+
+      &lt;h1 data-toc-skip&gt;Docker ARG VS ENV&lt;/h1&gt;
+
+      &lt;div class="post-meta text-muted d-flex flex-column"&gt;
+        &lt;!-- Published date and author --&gt;
+        &lt;div&gt;
+          &lt;span class="semi-bold"&gt;
+            OnePouch
+          &lt;/span&gt;
+          
+          &lt;!--
+  Date format snippet
+  See: /assets/js/_utils/timeage.js
+--&gt;
+
+
+
+
+
+
+  on
+
+&lt;span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Wed, Dec  8, 2021, 12:00 AM +0800"
+  &gt;Dec  8, 2021&lt;i class="unloaded"&gt;2021-12-08T00:00:00+08:00&lt;/i&gt;
+&lt;/span&gt;
+
+        &lt;/div&gt;
+
+        &lt;div&gt;
+          &lt;!-- lastmod --&gt;
+          
+
+          &lt;!-- read time --&gt;
+          &lt;!--
+  Calculate the post's reading time, and display the word count in tooltip
+ --&gt;
+
+
+
+&lt;!-- words per minute  --&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;!-- return element --&gt;
+&lt;span class="readtime" data-toggle="tooltip" data-placement="bottom"
+  title="84 words"&gt;1 min
+     read&lt;/span&gt;
+
+
+          &lt;!-- page views --&gt;
+          
+
+        &lt;/div&gt;
+
+      &lt;/div&gt; &lt;!-- .post-meta --&gt;
+
+      &lt;div class="post-content"&gt;
+
+        
+
+        &lt;h2 id="arg-vs-env"&gt;ARG VS ENV&lt;/h2&gt;
+
+&lt;p&gt;建立image時使用變數用ARG,&lt;/p&gt;
+
+&lt;p&gt;運行container時使用變數用ENV(相同image跑不同的設定,ex:環境變數)&lt;/p&gt;
+
+&lt;div class="language-dockerfile highlighter-rouge"&gt;&lt;div class="code-header"&gt;
+        &lt;span text-data="
+
+
+
+
+    Dockerfile
+
+"&gt;&lt;i class="fa-fw fas fa-code small"&gt;&lt;/i&gt;&lt;/span&gt;
+      &lt;button aria-label="copy" title-succeed="Copied!"&gt;&lt;i class="far fa-clipboard"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;code&gt;&lt;table class="rouge-table"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="rouge-gutter gl"&gt;&lt;pre class="lineno"&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class="rouge-code"&gt;&lt;pre&gt;&lt;span class="k"&gt;ARG&lt;/span&gt;&lt;span class="s"&gt; var&lt;/span&gt;
+&lt;span class="k"&gt;ENV&lt;/span&gt;&lt;span class="s"&gt; var=${var}&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;可以在建立image時有特定的var值(docker build –build-arg var=abc)
+或是運行container時有特別的運行值(docker run -e var=def)&lt;/p&gt;
+
+&lt;p&gt;&lt;img data-proofer-ignore data-src="https://vsupalov.com/images/docker-env-vars/docker_environment_build_args.png" alt="avatar" /&gt;&lt;/p&gt;
+
+&lt;p&gt;（圖片來源：vsupalov.com&lt;/p&gt;
+
+
+      &lt;/div&gt;
+
+      &lt;div class="post-tail-wrapper text-muted"&gt;
+
+        &lt;!-- categories --&gt;
+        
+
+        &lt;div class="post-meta mb-3"&gt;
+          &lt;i class="far fa-folder-open fa-fw mr-1"&gt;&lt;/i&gt;
+          
+            &lt;a href='/categories/abc/'&gt;ABC&lt;/a&gt;,
+            &lt;a href='/categories/tools/'&gt;Tools&lt;/a&gt;
+        &lt;/div&gt;
+        
+
+        &lt;!-- tags --&gt;
+        
+        &lt;div class="post-tags"&gt;
+          &lt;i class="fa fa-tags fa-fw mr-1"&gt;&lt;/i&gt;
+          
+          &lt;a href="/tags/tang/"
+            class="post-tag no-text-decoration" &gt;Tang&lt;/a&gt;
+          
+          &lt;/div&gt;
+        
+
+        &lt;div class="post-tail-bottom
+          d-flex justify-content-between align-items-center mt-3 pt-5 pb-2"&gt;
+          &lt;div class="license-wrapper"&gt;
+          
+            
+            This post is licensed under 
+            &lt;a href="https://creativecommons.org/licenses/by/4.0/"&gt;
+              CC BY 4.0
+            &lt;/a&gt;
+             by the author.
+          
+          &lt;/div&gt;
+
+          &lt;!--
+ Post sharing snippet
+--&gt;
+
+&lt;div class="share-wrapper"&gt;
+  &lt;span class="share-label text-muted mr-1"&gt;Share&lt;/span&gt;
+  &lt;span class="share-icons"&gt;
+    
+    
+
+    
+      
+        &lt;a href="https://twitter.com/intent/tweet?text=Docker ARG VS ENV - OnePouch&amp;url=https://onepouch.github.io/posts/Docker-ARG-ENV/" data-toggle="tooltip" data-placement="top"
+          title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"&gt;
+          &lt;i class="fa-fw fab fa-twitter"&gt;&lt;/i&gt;
+        &lt;/a&gt;
+    
+      
+        &lt;a href="https://www.facebook.com/sharer/sharer.php?title=Docker ARG VS ENV - OnePouch&amp;u=https://onepouch.github.io/posts/Docker-ARG-ENV/" data-toggle="tooltip" data-placement="top"
+          title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"&gt;
+          &lt;i class="fa-fw fab fa-facebook-square"&gt;&lt;/i&gt;
+        &lt;/a&gt;
+    
+      
+        &lt;a href="https://telegram.me/share?text=Docker ARG VS ENV - OnePouch&amp;url=https://onepouch.github.io/posts/Docker-ARG-ENV/" data-toggle="tooltip" data-placement="top"
+          title="Telegram" target="_blank" rel="noopener" aria-label="Telegram"&gt;
+          &lt;i class="fa-fw fab fa-telegram"&gt;&lt;/i&gt;
+        &lt;/a&gt;
+    
+
+    &lt;i id="copy-link" class="fa-fw fas fa-link small"
+        data-toggle="tooltip" data-placement="top"
+        title="Copy link"
+        title-succeed="Link copied successfully!"&gt;
+    &lt;/i&gt;
+
+  &lt;/span&gt;
+&lt;/div&gt;
+
+
+        &lt;/div&gt;&lt;!-- .post-tail-bottom --&gt;
+
+      &lt;/div&gt;&lt;!-- div.post-tail --&gt;
+
+    &lt;/div&gt; &lt;!-- .post --&gt;
+
+
+  &lt;/div&gt; &lt;!-- #post-wrapper --&gt;
+
+  
+
+  
+
+  &lt;!--
+  The Pannel on right side (Desktop views)
+--&gt;
+
+
+
+
+
+&lt;div id="panel-wrapper" class="col-xl-3 pl-2 text-muted topbar-down"&gt;
+
+  &lt;div class="access"&gt;
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    &lt;div id="access-lastmod" class="post"&gt;
+      &lt;span&gt;Recent Update&lt;/span&gt;
+      &lt;ul class="post-content pl-0 pb-1 ml-1 mt-2"&gt;
+
+      
+        
+        
+        
+        &lt;li&gt;&lt;a href="/posts/leetCode-Day21/"&gt;leetCode Day21&lt;/a&gt;&lt;/li&gt;
+      
+        
+        
+        
+        &lt;li&gt;&lt;a href="/posts/leetCode-Day16/"&gt;leetCode Day16&lt;/a&gt;&lt;/li&gt;
+      
+        
+        
+        
+        &lt;li&gt;&lt;a href="/posts/leetCode-Day5/"&gt;leetCode Day5&lt;/a&gt;&lt;/li&gt;
+      
+        
+        
+        
+        &lt;li&gt;&lt;a href="/posts/codeWars-Day1/"&gt;codeWars Day1&lt;/a&gt;&lt;/li&gt;
+      
+        
+        
+        
+        &lt;li&gt;&lt;a href="/posts/codeWars-Day2/"&gt;codeWars Day2&lt;/a&gt;&lt;/li&gt;
+      
+
+      &lt;/ul&gt;
+    &lt;/div&gt; &lt;!-- #access-lastmod --&gt;
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+
+
+  
+    &lt;div id="access-tags"&gt;
+      &lt;span&gt;Trending Tags&lt;/span&gt;
+      &lt;div class="d-flex flex-wrap mt-3 mb-1 mr-3"&gt;
+
+      
+        
+        &lt;a class="post-tag" href="/tags/tang/"&gt;Tang&lt;/a&gt;
+      
+        
+        &lt;a class="post-tag" href="/tags/docker/"&gt;Docker&lt;/a&gt;
+      
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  
+  &lt;/div&gt; &lt;!-- .access --&gt;
+
+  
+    &lt;!-- BS-toc.js will be loaded at medium priority --&gt;
+    &lt;script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"&gt;&lt;/script&gt;
+    &lt;div id="toc-wrapper" class="pl-0 pr-4 mb-5"&gt;
+      &lt;span class="pl-3 pt-2 mb-2"&gt;Contents&lt;/span&gt;
+      &lt;nav id="toc" data-toggle="toc"&gt;&lt;/nav&gt;
+    &lt;/div&gt;
+  
+
+&lt;/div&gt; &lt;!-- #panel-wrapper --&gt;
+
+
+&lt;/div&gt; &lt;!-- .row --&gt;
+
+&lt;div class="row"&gt;
+  &lt;div class="col-12 col-lg-11 col-xl-8"&gt;
+    &lt;div id="post-extend-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"&gt;
+
+    &lt;!--
+ Recommend the other 3 posts according to the tags and categories of the current post,
+ if the number is not enough, use the other latest posts to supplement.
+--&gt;
+
+&lt;!-- The total size of related posts  --&gt;
+
+
+&lt;!-- An random integer that bigger than 0  --&gt;
+
+
+&lt;!-- Equals to TAG_SCORE / {max_categories_hierarchy}  --&gt;
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+&lt;!-- Fill with the other newlest posts  --&gt;
+
+
+
+
+
+
+  &lt;div id="related-posts" class="mt-5 mb-2 mb-sm-4"&gt;
+    &lt;h3 class="pt-2 mt-1 mb-4 ml-1"
+      data-toc-skip&gt;Further Reading&lt;/h3&gt;
+    &lt;div class="card-deck mb-4"&gt;
+    
+      
+      
+      &lt;div class="card"&gt;
+        &lt;a href="/posts/Docker-Intro/"&gt;
+          &lt;div class="card-body"&gt;
+            &lt;!--
+  Date format snippet
+  See: /assets/js/_utils/timeage.js
+--&gt;
+
+
+
+
+
+
+&lt;span class="timeago small"
+  &gt;Nov  7, 2021&lt;i class="unloaded"&gt;2021-11-07T00:00:00+08:00&lt;/i&gt;
+&lt;/span&gt;
+
+            &lt;h3 class="pt-0 mt-1 mb-3" data-toc-skip&gt;Docker 簡介 哇嗚 好棒&lt;/h3&gt;
+            &lt;div class="text-muted small"&gt;
+              &lt;p&gt;
+                
+
+
+
+
+
+                何謂容器,為何需要它
+
+  容器能和主機的操作系統共享資源,因而它的效率高出一個數量級。啟動和停止容器均只需一瞬間。相比在主機上直接運行程序,容器的性能耗損非常低,甚至是零耗損。
+
+
+
+  容器具有可移植性,徹底解決了不同環境的改變導致的問題。
+
+
+
+  容器是輕量的,意味著開發者可以同時運行數十個容器。更容易進行水平擴展。
+
+
+Dockerfile
+
+FROM指定基礎鏡像
+
+  所謂定制...
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+    
+      
+      
+      &lt;div class="card"&gt;
+        &lt;a href="/posts/leetCode-Day41/"&gt;
+          &lt;div class="card-body"&gt;
+            &lt;!--
+  Date format snippet
+  See: /assets/js/_utils/timeage.js
+--&gt;
+
+
+
+
+
+
+&lt;span class="timeago small"
+  &gt;Dec 13, 2022&lt;i class="unloaded"&gt;2022-12-13T00:00:00+08:00&lt;/i&gt;
+&lt;/span&gt;
+
+            &lt;h3 class="pt-0 mt-1 mb-3" data-toc-skip&gt;leetCode Day41&lt;/h3&gt;
+            &lt;div class="text-muted small"&gt;
+              &lt;p&gt;
+                
+
+
+
+
+
+                Find All Anagrams in a String
+
+題目:
+
+1
+有兩個字串,s和p,找出s字串中和p字串相似的子字串,並返回子字串開始的idx陣列
+
+
+解法:
+
+1
+先找出p字串中字母的出現次數為P,再將s陣列從頭掃過一次,P將字母--,如果該字母為0的話將,idx刪除,如果i大於等於p的長度,需把前面的字母加回來,如果P長度為0的話,表示為相似字串,將idx-p長度+1存入結果...
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+    
+      
+      
+      &lt;div class="card"&gt;
+        &lt;a href="/posts/leetCode-Day42/"&gt;
+          &lt;div class="card-body"&gt;
+            &lt;!--
+  Date format snippet
+  See: /assets/js/_utils/timeage.js
+--&gt;
+
+
+
+
+
+
+&lt;span class="timeago small"
+  &gt;Dec 14, 2022&lt;i class="unloaded"&gt;2022-12-14T00:00:00+08:00&lt;/i&gt;
+&lt;/span&gt;
+
+            &lt;h3 class="pt-0 mt-1 mb-3" data-toc-skip&gt;leetCode Day42&lt;/h3&gt;
+            &lt;div class="text-muted small"&gt;
+              &lt;p&gt;
+                
+
+
+
+
+
+                Minimum Height Trees
+
+題目:
+
+1
+n為0~n-1的數字,edges為兩個數字的相連關西,此關西能組成一個樹,求哪個數字為根的話有最小的深度
+
+
+解法:
+
+1
+因圖型一定為樹,所以找出此樹最外層的點,最外層的點為只有一個相鄰的數字,將最外層的點剝離後,判斷剩下的數字是否只剩下一個或兩個,如果是的話,返回答案,如果不是的話,將繼續把最外層的數字剝離
+
+
+ code
+
+fu...
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+    
+    &lt;/div&gt; &lt;!-- .card-deck --&gt;
+  &lt;/div&gt; &lt;!-- #related-posts --&gt;
+
+
+
+    &lt;!--
+  Navigation buttons at the bottom of the post.
+--&gt;
+
+&lt;div class="post-navigation d-flex justify-content-between"&gt;
+  
+  &lt;a href="/posts/Docker-Chapter5/" class="btn btn-outline-primary"
+    prompt="Older"&gt;
+    &lt;p&gt;Docker Chapter 5&lt;/p&gt;
+  &lt;/a&gt;
+  
+
+  
+  &lt;a href="/posts/AbstractFactory/" class="btn btn-outline-primary"
+    prompt="Newer"&gt;
+    &lt;p&gt;AbstractFactory&lt;/p&gt;
+  &lt;/a&gt;
+  
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;/div&gt; &lt;!-- #post-extend-wrapper --&gt;
+
+  &lt;/div&gt; &lt;!-- .col-* --&gt;
+
+&lt;/div&gt; &lt;!-- .row --&gt;
+
+
+
+        &lt;!--
+  The Footer
+--&gt;
+
+&lt;footer class="d-flex w-100 justify-content-center"&gt;
+  &lt;div class="d-flex justify-content-between align-items-center"&gt;
+    &lt;div class="footer-left"&gt;
+      &lt;p class="mb-0"&gt;
+        © 2023
+        &lt;a href="https://twitter.com/OnePouch"&gt;OnePouch&lt;/a&gt;.
+        
+        &lt;span data-toggle="tooltip" data-placement="top"
+          title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author."&gt;Some rights reserved.&lt;/span&gt;
+        
+      &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="footer-right"&gt;
+      &lt;p class="mb-0"&gt;
+        
+
+        
+
+        Powered by 
+          &lt;a href="https://jekyllrb.com" target="_blank" rel="noopener"&gt;Jekyll&lt;/a&gt;
+         with 
+          &lt;a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener"&gt;Chirpy&lt;/a&gt;
+         theme.
+
+      &lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt; &lt;!-- div.d-flex --&gt;
+&lt;/footer&gt;
+
+
+      &lt;/div&gt;
+
+      &lt;!--
+  The Search results
+--&gt;
+&lt;div id="search-result-wrapper" class="d-flex justify-content-center unloaded"&gt;
+  &lt;div class="col-12 col-sm-11 post-content"&gt;
+    &lt;div id="search-hints"&gt;
+      &lt;h4 class="text-muted mb-4"&gt;Trending Tags&lt;/h4&gt;
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+
+
+      
+        
+        &lt;a class="post-tag" href="/tags/tang/"&gt;Tang&lt;/a&gt;
+      
+        
+        &lt;a class="post-tag" href="/tags/docker/"&gt;Docker&lt;/a&gt;
+      
+
+    &lt;/div&gt;
+    &lt;div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+    &lt;/div&gt; &lt;!-- #main-wrapper --&gt;
+
+    
+
+    &lt;div id="mask"&gt;&lt;/div&gt;
+
+    &lt;a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"&gt;
+      &lt;i class="fas fa-angle-up"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+
+    &lt;!--
+  Jekyll Simple Search loader
+  See: &lt;https://github.com/christian-fei/Simple-Jekyll-Search&gt;
+--&gt;
+
+
+
+
+
+&lt;script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"&gt;&lt;/script&gt;
+
+&lt;script&gt;
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('search-results'),
+  json: '/assets/js/data/search.json',
+  searchResultTemplate: '&lt;div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"&gt;  &lt;a href="{url}"&gt;{title}&lt;/a&gt;  &lt;div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"&gt;    {categories}    {tags}  &lt;/div&gt;  &lt;p&gt;{snippet}&lt;/p&gt;&lt;/div&gt;',
+  noResultsText: '&lt;p class="mt-5"&gt;Oops! No result founds.&lt;/p&gt;',
+  templateMiddleware: function(prop, value, template) {
+    if (prop === 'categories') {
+      if (value === '') {
+        return `${value}`;
+      } else {
+        return `&lt;div class="mr-sm-4"&gt;&lt;i class="far fa-folder fa-fw"&gt;&lt;/i&gt;${value}&lt;/div&gt;`;
+      }
+    }
+
+    if (prop === 'tags') {
+      if (value === '') {
+        return `${value}`;
+      } else {
+        return `&lt;div&gt;&lt;i class="fa fa-tag fa-fw"&gt;&lt;/i&gt;${value}&lt;/div&gt;`;
+      }
+    }
+  }
+});
+&lt;/script&gt;
+
+
+    &lt;!--
+  JS selector for site.
+--&gt;
+
+&lt;!-- layout specified --&gt;
+
+
+  
+
+
+
+  &lt;!-- image lazy-loading &amp; popup --&gt;
+  &lt;script src="https://cdn.jsdelivr.net/combine/npm/lozad/dist/lozad.min.js,npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/clipboard@2/dist/clipboard.min.js"&gt;&lt;/script&gt;
+
+
+
+
+
+&lt;script defer src="/assets/js/dist/post.min.js"&gt;&lt;/script&gt;
+
+
+
+&lt;!-- commons --&gt;
+
+&lt;script src="https://cdn.jsdelivr.net/combine/npm/popper.js@1.16.1,npm/bootstrap@4/dist/js/bootstrap.min.js"&gt;&lt;/script&gt;
+
+
+  &lt;!-- PWA --&gt;
+  &lt;script defer src="/app.js"&gt;&lt;/script&gt;
+
+  &lt;!-- GA --&gt;
+  
+    &lt;!--
+  The GA snippet
+--&gt;
+&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script defer src="https://www.googletagmanager.com/gtag/js?id="&gt;&lt;/script&gt;
+&lt;script&gt;
+  document.addEventListener("DOMContentLoaded", function(event) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+
+    gtag('js', new Date());
+    gtag('config', '');
+  });
+&lt;/script&gt;
+
+  
+
+
+
+
+  &lt;/body&gt;
+
+&lt;/html&gt;
+&lt;/article&gt;
+        &lt;/div&gt;
+        HTML;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">PHPTemplatePageTemplate</span> <span class="kd">extends</span> <span class="nc">BasePageTemplate</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">getTemplateString</span><span class="p">():</span> <span class="kt">string</span>
+    <span class="p">{</span>
+        <span class="nv">$renderedTitle</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">titleTemplate</span><span class="o">-&gt;</span><span class="nf">getTemplateString</span><span class="p">();</span>
+
+        <span class="k">return</span> <span class="sh">&lt;&lt;&lt;HTML
+        &lt;div class="page"&gt;
+            $renderedTitle
+            &lt;article class="content"&gt;&lt;?= \$content; ?&gt;&lt;/article&gt;
+        &lt;/div&gt;
+        HTML;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">interface</span> <span class="nc">TemplateRenderer</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">render</span><span class="p">(</span><span class="kt">string</span> <span class="nv">$templateString</span><span class="p">,</span> <span class="kt">array</span> <span class="nv">$arguments</span> <span class="o">=</span> <span class="p">[]):</span> <span class="kt">string</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">TwigRenderer</span> <span class="kd">implements</span> <span class="nc">TemplateRenderer</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">render</span><span class="p">(</span><span class="kt">string</span> <span class="nv">$templateString</span><span class="p">,</span> <span class="kt">array</span> <span class="nv">$arguments</span> <span class="o">=</span> <span class="p">[]):</span> <span class="kt">string</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="err">\</span><span class="nc">Twig</span><span class="o">::</span><span class="nf">render</span><span class="p">(</span><span class="nv">$templateString</span><span class="p">,</span> <span class="nv">$arguments</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">PHPTemplateRenderer</span> <span class="kd">implements</span> <span class="nc">TemplateRenderer</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">render</span><span class="p">(</span><span class="kt">string</span> <span class="nv">$templateString</span><span class="p">,</span> <span class="kt">array</span> <span class="nv">$arguments</span> <span class="o">=</span> <span class="p">[]):</span> <span class="kt">string</span>
+    <span class="p">{</span>
+        <span class="nb">extract</span><span class="p">(</span><span class="nv">$arguments</span><span class="p">);</span>
+
+        <span class="nb">ob_start</span><span class="p">();</span>
+        <span class="k">eval</span><span class="p">(</span><span class="s1">' ?&gt;'</span> <span class="mf">.</span> <span class="nv">$templateString</span> <span class="mf">.</span> <span class="s1">'&lt;?php '</span><span class="p">);</span>
+        <span class="nv">$result</span> <span class="o">=</span> <span class="nb">ob_get_contents</span><span class="p">();</span>
+        <span class="nb">ob_end_clean</span><span class="p">();</span>
+
+        <span class="k">return</span> <span class="nv">$result</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">Page</span>
+<span class="p">{</span>
+
+    <span class="k">public</span> <span class="nv">$title</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="nv">$content</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__construct</span><span class="p">(</span><span class="nv">$title</span><span class="p">,</span> <span class="nv">$content</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">title</span> <span class="o">=</span> <span class="nv">$title</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">content</span> <span class="o">=</span> <span class="nv">$content</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Here's how would you use the template further in real life. Note that the</span>
+    <span class="c1">// page class does not depend on any concrete template classes.</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">render</span><span class="p">(</span><span class="kt">TemplateFactory</span> <span class="nv">$factory</span><span class="p">):</span> <span class="kt">string</span>
+    <span class="p">{</span>
+        <span class="nv">$pageTemplate</span> <span class="o">=</span> <span class="nv">$factory</span><span class="o">-&gt;</span><span class="nf">createPageTemplate</span><span class="p">();</span>
+
+        <span class="nv">$renderer</span> <span class="o">=</span> <span class="nv">$factory</span><span class="o">-&gt;</span><span class="nf">getRenderer</span><span class="p">();</span>
+
+        <span class="k">return</span> <span class="nv">$renderer</span><span class="o">-&gt;</span><span class="nf">render</span><span class="p">(</span><span class="nv">$pageTemplate</span><span class="o">-&gt;</span><span class="nf">getTemplateString</span><span class="p">(),</span> <span class="p">[</span>
+            <span class="s1">'title'</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">title</span><span class="p">,</span>
+            <span class="s1">'content'</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">content</span>
+        <span class="p">]);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nv">$page</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Page</span><span class="p">(</span><span class="s1">'Sample page'</span><span class="p">,</span> <span class="s1">'This is the body.'</span><span class="p">);</span>
+
+<span class="k">echo</span> <span class="s2">"Testing actual rendering with the PHPTemplate factory:</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$page</span><span class="o">-&gt;</span><span class="nf">render</span><span class="p">(</span><span class="k">new</span> <span class="nc">PHPTemplateFactory</span><span class="p">());</span>
+</pre></table></code></div></div><p>出處:https://refactoring.guru/</p></div><div class="post-tail-wrapper text-muted"><div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href='/categories/design-pattern/'>Design Pattern</a>, <a href='/categories/abstractfactory/'>AbstractFactory</a></div><div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/tags/tang/" class="post-tag no-text-decoration" >Tang</a></div><div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2"><div class="license-wrapper"> This post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a> by the author.</div><div class="share-wrapper"> <span class="share-label text-muted mr-1">Share</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=AbstractFactory - OnePouch&url=https://onepouch.github.io/posts/AbstractFactory/" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=AbstractFactory - OnePouch&u=https://onepouch.github.io/posts/AbstractFactory/" data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"> <i class="fa-fw fab fa-facebook-square"></i> </a> <a href="https://telegram.me/share?text=AbstractFactory - OnePouch&url=https://onepouch.github.io/posts/AbstractFactory/" data-toggle="tooltip" data-placement="top" title="Telegram" target="_blank" rel="noopener" aria-label="Telegram"> <i class="fa-fw fab fa-telegram"></i> </a> <i id="copy-link" class="fa-fw fas fa-link small" data-toggle="tooltip" data-placement="top" title="Copy link" title-succeed="Link copied successfully!"> </i> </span></div></div></div></div></div><div id="panel-wrapper" class="col-xl-3 pl-2 text-muted topbar-down"><div class="access"><div id="access-lastmod" class="post"> <span>Recent Update</span><ul class="post-content pl-0 pb-1 ml-1 mt-2"><li><a href="/posts/leetCode-Day21/">leetCode Day21</a><li><a href="/posts/leetCode-Day16/">leetCode Day16</a><li><a href="/posts/leetCode-Day5/">leetCode Day5</a><li><a href="/posts/codeWars-Day1/">codeWars Day1</a><li><a href="/posts/codeWars-Day2/">codeWars Day2</a></ul></div><div id="access-tags"> <span>Trending Tags</span><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/tang/">Tang</a> <a class="post-tag" href="/tags/docker/">Docker</a></div></div></div><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script><div id="toc-wrapper" class="pl-0 pr-4 mb-5"> <span class="pl-3 pt-2 mb-2">Contents</span><nav id="toc" data-toggle="toc"></nav></div></div></div><div class="row"><div class="col-12 col-lg-11 col-xl-8"><div id="post-extend-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><div id="related-posts" class="mt-5 mb-2 mb-sm-4"><h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3><div class="card-deck mb-4"><div class="card"> <a href="/posts/leetCode-Day41/"><div class="card-body"> <span class="timeago small" >Dec 13, 2022<i class="unloaded">2022-12-13T00:00:00+08:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>leetCode Day41</h3><div class="text-muted small"><p> Find All Anagrams in a String 題目: 1 有兩個字串,s和p,找出s字串中和p字串相似的子字串,並返回子字串開始的idx陣列 解法: 1 先找出p字串中字母的出現次數為P,再將s陣列從頭掃過一次,P將字母--,如果該字母為0的話將,idx刪除,如果i大於等於p的長度,需把前面的字母加回來,如果P長度為0的話,表示為相似字串,將idx-p長度+1存入結果...</p></div></div></a></div><div class="card"> <a href="/posts/leetCode-Day42/"><div class="card-body"> <span class="timeago small" >Dec 14, 2022<i class="unloaded">2022-12-14T00:00:00+08:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>leetCode Day42</h3><div class="text-muted small"><p> Minimum Height Trees 題目: 1 n為0~n-1的數字,edges為兩個數字的相連關西,此關西能組成一個樹,求哪個數字為根的話有最小的深度 解法: 1 因圖型一定為樹,所以找出此樹最外層的點,最外層的點為只有一個相鄰的數字,將最外層的點剝離後,判斷剩下的數字是否只剩下一個或兩個,如果是的話,返回答案,如果不是的話,將繼續把最外層的數字剝離 code fu...</p></div></div></a></div><div class="card"> <a href="/posts/leetCode-Day43/"><div class="card-body"> <span class="timeago small" >Dec 15, 2022<i class="unloaded">2022-12-15T00:00:00+08:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>leetCode Day43</h3><div class="text-muted small"><p> LRU Cache 題目: 1 有一個暫存只有capacity個容量,如果資料超過容量,會把最早使用過的資料刪除 解法: 1 一個存容量一個存資料,如果容量不夠還需要存入,把資料最前面的刪除,再存入,因為取得資料也算是使用,所以取得如果有找到,需要把資料放到最後面 code type Node struct { Key int Val int Pre...</p></div></div></a></div></div></div><div class="post-navigation d-flex justify-content-between"> <a href="/posts/Docker-ARG-ENV/" class="btn btn-outline-primary" prompt="Older"><p>Docker ARG VS ENV</p></a> <a href="/posts/Builder/" class="btn btn-outline-primary" prompt="Newer"><p>Builder</p></a></div></div></div></div><footer class="d-flex w-100 justify-content-center"><div class="d-flex justify-content-between align-items-center"><div class="footer-left"><p class="mb-0"> © 2023 <a href="https://twitter.com/OnePouch">OnePouch</a>. <span data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">Some rights reserved.</span></p></div><div class="footer-right"><p class="mb-0"> Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> with <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> theme.</p></div></div></footer></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content"><div id="search-hints"><h4 class="text-muted mb-4">Trending Tags</h4><a class="post-tag" href="/tags/tang/">Tang</a> <a class="post-tag" href="/tags/docker/">Docker</a></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a> <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! No result founds.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script> <script src="https://cdn.jsdelivr.net/combine/npm/lozad/dist/lozad.min.js,npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/clipboard@2/dist/clipboard.min.js"></script> <script defer src="/assets/js/dist/post.min.js"></script> <script src="https://cdn.jsdelivr.net/combine/npm/popper.js@1.16.1,npm/bootstrap@4/dist/js/bootstrap.min.js"></script> <script defer src="/app.js"></script> <script defer src="https://www.googletagmanager.com/gtag/js?id="></script> <script> document.addEventListener("DOMContentLoaded", function(event) { window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', ''); }); </script>
